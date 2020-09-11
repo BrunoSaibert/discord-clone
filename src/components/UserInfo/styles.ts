@@ -36,15 +36,82 @@ export const UserData = styled.div`
   flex-direction: column;
 
   margin-left: 8px;
+
+  > strong {
+    color: var(--white);
+    font-size: 13px;
+    display: block;
+  }
+
+  > span {
+    color: var(--gray);
+    font-size: 13px;
+  }
 `;
 
 export const Icons = styled.div`
   display: flex;
   align-items: center;
+
+  > svg:not(:first-child) {
+    margin-left: 2px;
+  }
 `;
 
-export const MicrophoneIcons = styled(FaMicrophone)``;
+export const MicrophoneIcons = styled(FaMicrophone)`
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 4px;
 
-export const HeadphonesIcons = styled(FaHeadphones)``;
+  padding: 6px;
 
-export const SettingsIcons = styled(BsFillGearFill)``;
+  color: var(--white);
+  opacity: 0.7;
+
+  transition: opacity 0.2s, background-color 0.2s;
+
+  &:hover {
+    background-color: var(--quinary);
+    opacity: 1;
+  }
+`;
+
+export const HeadphonesIcons = styled(FaHeadphones)`
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 4px;
+
+  padding: 6px;
+
+  color: var(--white);
+
+  opacity: 0.7;
+
+  transition: opacity 0.2s, background-color 0.2s;
+
+  &:hover {
+    background-color: var(--quinary);
+    opacity: 1;
+  }
+`;
+
+export const SettingsIcons = styled(BsFillGearFill)`
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 4px;
+
+  padding: 6px;
+
+  color: var(--white);
+  opacity: 0.7;
+
+  transition: opacity 0.2s, background-color 0.2s;
+
+  &:hover {
+    background-color: var(--quinary);
+    opacity: 1;
+  }
+`;
