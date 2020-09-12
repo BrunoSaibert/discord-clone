@@ -37,6 +37,7 @@ export default createGlobalStyle`
     --mention-message: #413f3f;
  
     --link: #5d80d6;
+    --link-background: #41444b;
  
     --rocketseat: #6633cc;
   }
